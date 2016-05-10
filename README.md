@@ -1,5 +1,5 @@
 # Encryption
-Encrypts and decrypts file\
+Encrypts and decrypts files
 ## To run:
 ``` sh
 java -jar FileEncryptor.jar <encrypt/decrypt> <file_name> <keyphrase>
