@@ -17,7 +17,9 @@ public class FileEncryptor {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
 	        public void run() {
 		        try {
-		            if (args[0].equals("decrypt")) {
+                    if (args.length < 3) {
+                        System.out.println("Wrong number of arguments.\nAborting...");
+		            } else if (args[0].equals("decrypt")) {
 		                decryptFile(args[1], args[2]);
 		            } else if (args[0].equals("encrypt")) {
 		                encryptFile(args[1], args[2]);
